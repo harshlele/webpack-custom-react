@@ -1,10 +1,10 @@
 module.exports = {
-    mode: "development",
+    mode: "production",
     entry: "./src/main.js",
     module: {
         rules:[ 
             {
-                test: /\.js$/,
+                test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader"
@@ -21,6 +21,9 @@ module.exports = {
                 
             }
         ]
+    },
+    resolve:{
+        extensions:[".js",".jsx"]
     },
     devtool: "source-map",
     devServer: {
