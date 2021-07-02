@@ -9,7 +9,7 @@ export default (props) => {
             <div style={{color: "skyblue"}}>
                 {props.msg1}
             </div>
-            <img src={Blue} alt="blue" />
+            <img src={Logo} alt="blue" />
             <div style={{color: "skyblue"}}>
                 {props.msg2}
             </div>

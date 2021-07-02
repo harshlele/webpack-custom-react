@@ -1,6 +1,13 @@
+const htmlWebPackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const path = require("path");
+
 module.exports = {
-    mode: "production",
+    mode: "development",
     entry: "./src/main.js",
+    output: {
+        path: path.resolve(__dirname, "dist")
+    },
     module: {
         rules:[ 
             {
@@ -33,5 +40,12 @@ module.exports = {
     devServer: {
         contentBase: "./dist",
         hot: true
-    }
+    },
+
+    plugins:[
+        new CleanWebpackPlugin(),
+        new htmlWebPackPlugin({
+            template: "./src/index.html"
+        })
+    ]
 }
