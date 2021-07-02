@@ -8,6 +8,6 @@ import App from "./components/App";
 
 window.onload = function(){
     document.body.innerHTML += "onload";
-    ReactDOM.render(<App msg1="Loaded as separate resource" msg2="inlined into html" />, document.getElementById("app"))
+    ReactDOM.render(<App msg1="Loaded as separate resource blablabla 2" msg2="inlined into html" />, document.getElementById("app"))
 }
 

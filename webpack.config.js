@@ -1,6 +1,7 @@
 const htmlWebPackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
+const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
 module.exports = {
     mode: "development",
@@ -46,6 +47,7 @@ module.exports = {
         new CleanWebpackPlugin(),
         new htmlWebPackPlugin({
             template: "./src/index.html"
-        })
+        }),
+        new ReactRefreshWebpackPlugin()
     ]
 }
