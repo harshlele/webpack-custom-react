@@ -1,10 +1,18 @@
 import React from "react";
-
+import Blue from "../assets/blue.png";
+import Logo from "../assets/logo.png";
 
 export default (props) => {
     return (
-        <div style={{color: "red"}}>
-            {props.msg}
-        </div>
+        <>
+            <img src={Blue} alt="blue" />
+            <div style={{color: "skyblue"}}>
+                {props.msg1}
+            </div>
+            <img src={Blue} alt="blue" />
+            <div style={{color: "skyblue"}}>
+                {props.msg2}
+            </div>
+        </>
     );
 }

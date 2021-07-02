@@ -11,14 +11,18 @@ module.exports = {
                 }   
             },
             {
-                test: /\.css$/i,
+                test: /\.css$/,
                 use:["style-loader", "css-loader"]
                 
             },
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.s[ac]ss$/,
                 use:["style-loader", "css-loader", "sass-loader"]
                 
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                type: "asset"
             }
         ]
     },

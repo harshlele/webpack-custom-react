@@ -7,7 +7,7 @@ import ReactDOM from "react-dom";
 import App from "./components/App";
 
 window.onload = function(){
-    document.body.innerHTML += "test";
-    ReactDOM.render(<App msg="this is a test" />, document.getElementById("app"))
+    document.body.innerHTML += "onload";
+    ReactDOM.render(<App msg1="Loaded as separate resource" msg2="inlined" />, document.getElementById("app"))
 }
 
